@@ -1,5 +1,5 @@
 echo -e '\e[36m>>>>>>>>>>>>>>>>>>>>>> copy the mongodb repo file <<<<<<<<<<<<<<<<<<<<<<<<\e[0m'
-cp mongodb.repo /etc/yum.repos.d/mongodb.repo
+cp mongodb.repo /etc/yum.repos.d/mongo.repo
 
 echo -e '\e[36m>>>>>>>>>>>>>>>>>>>>>> Install mongoDB <<<<<<<<<<<<<<<<<<<<<<<<\e[0m'
 yum install mongodb-org -y
