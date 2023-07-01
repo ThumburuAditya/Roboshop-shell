@@ -32,5 +32,9 @@ systemctl restart catalogue
 
 echo -e '/e[36m>>>>>>>>>>>>>>>>>>>>>> Copy mongodb repos <<<<<<<<<<<<<<<<<<<<<<<</e[0m'
 cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongo.repo
+
+echo -e '/e[36m>>>>>>>>>>>>>>>>>>>>>> Install mongodb <<<<<<<<<<<<<<<<<<<<<<<</e[0m'
 yum install mongodb-org-shell -y
+
+echo -e '/e[36m>>>>>>>>>>>>>>>>>>>>>> Load Schema <<<<<<<<<<<<<<<<<<<<<<<</e[0m'
 mongo --host mongodb-dev.thumburuaditya.online </app/schema/catalogue.js
