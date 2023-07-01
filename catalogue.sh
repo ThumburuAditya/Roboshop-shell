@@ -17,7 +17,6 @@ cd /app
 
 echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> extract the content <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 unzip /tmp/catalogue.zip
-cd /app
 
 echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Download Node JS dependencies <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 npm install
