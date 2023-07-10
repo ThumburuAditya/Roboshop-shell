@@ -36,5 +36,5 @@ cp /home/centos/Roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Install mongodb<<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
 
-echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Load Schema <<<<<<<<<<<<<<<<<<<<<<<</e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Load Schema <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 mongo --host user-dev.thumburuaditya.online </app/schema/user.js

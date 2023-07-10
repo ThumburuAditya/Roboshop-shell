@@ -16,14 +16,14 @@ echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Extract shipping content <<<<<<<<<<<<<<<<<
 unzip /tmp/shipping.zip
 cd /app
 
-echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> clean install maven <<<<<<<<<<<<<<<<<<<<<<<</e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> clean install maven <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 mvn clean package
 mv target/shipping-1.0.jar shipping.jar
 
-echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Copy systemd files <<<<<<<<<<<<<<<<<<<<<<<</e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Copy systemd files <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 cp /home/centos/Roboshop-shell/shipping.service /etc/systemd/system/shipping.service
 
-echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Start shipping <<<<<<<<<<<<<<<<<<<<<<<</e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Start shipping <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 systemctl daemon-reload
 systemctl enable shipping
 systemctl start shipping

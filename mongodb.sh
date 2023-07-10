@@ -1,7 +1,7 @@
-echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> copy the mongodb repo file <<<<<<<<<<<<<<<<<<<<<<<</e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> copy the mongodb repo file <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 
-echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Install mongoDB <<<<<<<<<<<<<<<<<<<<<<<</e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Install mongoDB <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 yum install mongodb-org -y
 
 systemctl enable mongod

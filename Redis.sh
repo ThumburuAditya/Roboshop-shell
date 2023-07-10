@@ -1,7 +1,7 @@
-echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Install Redis repos <<<<<<<<<<<<<<<<<<<<<<<</e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Install Redis repos <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 yum install https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
 
-echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Install Redis <<<<<<<<<<<<<<<<<<<<<<<</e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>>>>>>>>> Install Redis <<<<<<<<<<<<<<<<<<<<<<<<\e[0m"
 yum module enable redis:remi-6.2 -y
 yum install redis -y
 
